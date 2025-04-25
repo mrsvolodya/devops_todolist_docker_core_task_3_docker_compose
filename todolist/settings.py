@@ -66,8 +66,8 @@ DATABASES = {
         'NAME': 'app_db',
         'USER': 'app_user',
         'PASSWORD': '1234',
-        'HOST': '172.17.0.2',  # You can use a different host if your MySQL server is on a remote machine.
-        'PORT': '',  # Leave this empty to use the default MySQL port (3306).
+        'HOST': 'mysql',  # Using the service name from docker-compose
+        'PORT': '3306',  # Explicitly set the port
     }
 }
 
